@@ -4,7 +4,7 @@
   "description": "- Each html should have its corresonding `bundle.js`.",
   "main": "webpack.config.js",
   "scripts": {
-    "test": "jest",
+    "test": "jest --coverage",
     "prestart": "webpack --config webpack.config.dev.js",
     "start": "webpack-dev-server",
     "build": "webpack --config webpack.config.js"

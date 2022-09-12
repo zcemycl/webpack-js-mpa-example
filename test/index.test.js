@@ -2,21 +2,21 @@ const puppeteer = require('puppeteer');
 const repoName = 'webpack-js-mpa-example'
 const length = repoName.length;
 const si = __dirname.indexOf(repoName);
-console.log(__dirname)
-console.log(`file://${__dirname.slice(0, si+length)}/dist/index.html`)
-jest.setTimeout(30000)
+jest.setTimeout(50000)
 
 const ci = Boolean(process.env.CI || false);
-console.log('ci '+ci)
+console.log(ci, __dirname+'\n', 
+    ci?
+    `file://${__dirname.slice(0, si+length)}/${repoName}/dist/index.html`:
+    `file://${__dirname.slice(0, si+length)}/dist/index.html`)
 
 test('should click', async () => {
     const browser = await puppeteer.launch({
-        headless: true, 
-        slowMo: 80,
-        args: ['--window-size=1920,1080']
+        headless: ci, 
+        slowMo: ci?0:80,
+        args: ['--window-size=640,480']
     });
     const page = await browser.newPage();
-    // await page.goto(`file://${__dirname.slice(0, si+length)}/dist/index.html`);
     await page.goto(ci?
         `file://${__dirname.slice(0, si+length)}/${repoName}/dist/index.html`:
         `file://${__dirname.slice(0, si+length)}/dist/index.html`);
