@@ -1,5 +1,5 @@
 const config = {
     verbose: true,
-    // testEnvironment: 'jsdom',
+    testEnvironment: 'jsdom',
     preset: 'jest-puppeteer'
 }
