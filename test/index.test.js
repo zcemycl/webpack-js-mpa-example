@@ -21,7 +21,7 @@ test('should click', async () => {
         `file://${__dirname.slice(0, si+length)}/${repoName}/dist/index.html`:
         `file://${__dirname.slice(0, si+length)}/dist/index.html`);
     await page.click('button');
-    const paragraph = await page.$eval('h5', (input) => input.innerHTML);
+    const paragraph = await page.$eval('h4', (input) => input.innerHTML);
     console.log(paragraph)
     expect(paragraph).not.toBe('');
     await browser.close()

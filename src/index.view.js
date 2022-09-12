@@ -4,7 +4,7 @@ class View {
         this.button = this.createElement('button')
         this.button.textContent = 'New Number'
         
-        this.paragraph = this.createElement('h5')
+        this.paragraph = this.createElement('h4')
         this.paragraph.innerHTML = ''
         this.app.append(this.button, this.paragraph)
     }
