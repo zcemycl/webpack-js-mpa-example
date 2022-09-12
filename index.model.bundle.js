@@ -1,1 +1,1 @@
-(()=>{"use strict"})();
+(()=>{var t={166:t=>{t.exports={Model:class{constructor(){this.data=[]}bindDataChanged(t){this.onDataChanged=t}_commit(t){this.onDataChanged(t)}addRandom(t){this.data.push(t),this._commit(this.data)}}}}},a={};(function o(s){var r=a[s];if(void 0!==r)return r.exports;var d=a[s]={exports:{}};return t[s](d,d.exports,o),d.exports})(166)})();

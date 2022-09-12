@@ -1,1 +1,1 @@
-(()=>{"use strict"})();
+(()=>{var a={750:a=>{a.exports={Controller:class{constructor(a,d){this.model=a,this.view=d,this.model.bindDataChanged(this.onDataChanged),this.view.bindAddRandom(this.handleAddRandom),this.onDataChanged(this.model.data)}onDataChanged=a=>{console.log("changed data"),this.view.displayChanges(a)};handleAddRandom=a=>{this.model.addRandom(a)}}}}},d={};(function t(o){var e=d[o];if(void 0!==e)return e.exports;var n=d[o]={exports:{}};return a[o](n,n.exports,t),n.exports})(750)})();
