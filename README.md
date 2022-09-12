@@ -7,6 +7,7 @@
 3. Puppeteer for e2e testing
 4. Webpack
 5. MultiPages Application
+6. Github action to deploy github pages
 
 ## How to start?
 1. Create `webpack.config.js`, and edit it. 
