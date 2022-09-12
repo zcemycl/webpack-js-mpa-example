@@ -21,8 +21,11 @@ jobs:
       - name: Build
         run: |
           npm run build
+          echo 'pwd'
           pwd
+          echo 'ls'
           ls
+          echo 'ls ..'
           ls ..
           
       - name: Deploy to GH Page
