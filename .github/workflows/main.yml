@@ -27,6 +27,8 @@ jobs:
           ls
           echo 'ls ..'
           ls ..
+          echo 'ls dist'
+          ls dist
           
       - name: Deploy to GH Page
         uses: JamesIves/github-pages-deploy-action@4.1.1
