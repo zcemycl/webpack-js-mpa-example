@@ -29,16 +29,18 @@ jobs:
           ls ..
           echo 'ls dist'
           ls dist
-          
+      
+      - name: Test
+        env:
+          CI: true
+        run: |
+          pwd
+          npm run test
+
       - name: Deploy to GH Page
         uses: JamesIves/github-pages-deploy-action@4.1.1
         with:
           branch: gh-pages
           folder: dist
 
-#       - name: Test
-#         env:
-#           CI: true
-#         run: |
-#           pwd
-#           npm run test
+      

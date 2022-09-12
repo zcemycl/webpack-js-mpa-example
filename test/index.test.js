@@ -18,7 +18,7 @@ test('should click', async () => {
     const page = await browser.newPage();
     // await page.goto(`file://${__dirname.slice(0, si+length)}/dist/index.html`);
     await page.goto(ci?
-        'https://zcemycl.github.io/webpack-js-mpa-example':
+        `file://${__dirname.slice(0, si+length)}/${repoName}/dist/index.html`:
         `file://${__dirname.slice(0, si+length)}/dist/index.html`);
     await page.click('button');
     const paragraph = await page.$eval('h5', (input) => input.innerHTML);
