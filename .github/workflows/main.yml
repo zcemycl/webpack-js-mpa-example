@@ -24,16 +24,6 @@ jobs:
           pwd
           ls
           ls ..
-      
-      - name: Check another branches
-        run: |
-          pwd 
-          ls 
-          ls ..
-        with: 
-          branch: gh-pages
-          folder: dist
-        
           
       - name: Deploy to GH Page
         uses: JamesIves/github-pages-deploy-action@4.1.1
