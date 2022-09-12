@@ -13,3 +13,4 @@
 ### References
 1. [Creating Multiple Bundles for Multiple Pages with Webpack - Ep. 7](https://www.youtube.com/watch?v=PcPzKMZzyqc)
 2. [SPAs vs MPAs/MVC - Are Single Page Apps always better?](https://www.youtube.com/watch?v=F_BYg2QGsC0)
+3. [Continuously Deploy Static Pages with Github Actions & gh-pages](https://javascript.plainenglish.io/continuously-deploy-static-pages-with-github-actions-gh-pages-207e4a009d1c)
