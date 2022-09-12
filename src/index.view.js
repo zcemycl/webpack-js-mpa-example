@@ -33,4 +33,4 @@ class View {
     }
 }
 
-export { View }
+module.exports = { View }

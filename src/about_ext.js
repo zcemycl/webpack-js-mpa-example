@@ -2,4 +2,4 @@ const callme = () => {
     console.log('callme....')
 }
 
-export { callme };
+module.exports = { callme };

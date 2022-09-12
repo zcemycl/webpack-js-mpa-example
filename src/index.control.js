@@ -19,4 +19,4 @@ class Controller {
     }
 }
 
-export { Controller }
+module.exports = { Controller }
